@@ -4,3 +4,4 @@
 4. Url is not hardcoded and is based on env APP_URL. Be sure you change this to match your enviornment!
 5. Run php artisan:test to see test results for status 200 & 422
 6. Observer results are stored in storage/logs/Patient.log & storage/logs/Record.log
+7. DB_DATABASE in env file is set to C:/xampp/htdocs/patientrecords/database/patientrecords You may need to change it to suit your enviornment
