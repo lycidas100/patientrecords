@@ -32,7 +32,16 @@ class RecordController extends Controller
      */
     public function store(Request $request,Record $record)
     {
-        //
+        $this->validate($request,[
+
+            'patient_id'=>'required|integer',
+            'description'=>'required|max:255',
+                    
+        ]);
+
+        $record->patient_id = $request->patient_id;
+        $record->description = $request->description;
+        $record->save();
     }
 
     /**
